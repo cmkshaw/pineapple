@@ -17,9 +17,9 @@ $(document).ready(function() {
     }
 
     // Append the garmin
-    for (i = 0; i < 1; i++) {
-        $('#container').append('<img class="garmin" src="img/garm.png"/>');
-    }
+    // for (i = 0; i < 1; i++) {
+    //     $('#container').append('<img class="garmin" src="img/garm.png"/>');
+    // }
 
     function getRandom(myArray) {
         var rand = myArray[Math.floor(Math.random() * myArray.length)];
@@ -46,11 +46,4 @@ $(document).ready(function() {
             .to(this, getRandom(speedOptions), { rotation: 180, y: getRandom(yOptions), repeat: -1, yoyo: false, }, delay)
     });
 
-    $('.garmin').each(function(index) {
-        var randomNum = getRandom(xOptions);
-        var delay = getRandom(delayOptions);
-        $(this).css('left', randomNum);
-        tl.to(this, getRandom(speedOptions), { y: 0, repeat: 1, yoyo: false })
-            .to(this, getRandom(speedOptions), { y: getRandom(yOptions), repeat: 5, yoyo: false }, 30)
-    });
 });
