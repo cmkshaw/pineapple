@@ -11,10 +11,11 @@
    ========================================================================== */
 
 html {
-    background: #83c5a9;
     color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+}
+
+.pineapple-bg{
+    background: #83c5a9;
 }
 
 .container{
@@ -44,9 +45,36 @@ html {
     top:-200px;
 }
 
+.taurus{
+    width: 120px;
+    position: absolute;
+    left: 600px;
+    top:-200px;
+}
+
 .slice, .spin {
     width: 80px;
     top:-300px;
     position: absolute;
     left: 400px;
+}
+
+.watermelon-bg{
+    background-image: url('../img/eyes.jpg');
+    background-size: cover;
+    background-color: black;
+}
+
+.watermelon{
+    width: 120px;
+    position: absolute;
+    left: 600px;
+    top:-200px;
+}
+
+.rose{
+    width: 50px;
+    position: absolute;
+    left: 600px;
+    top:-500px;
 }
